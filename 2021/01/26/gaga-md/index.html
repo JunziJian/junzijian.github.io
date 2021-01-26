@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="君子剑">
   <meta name="keywords" content="">
-  <title>君子如水 - Hexo</title>
+  <title>2021.01.26笔记 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="君子如水">
+            <span class="h2" id="subtitle" title="2021.01.26笔记">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-01-22 21:10" pubdate>
-        2021年1月22日 晚上
+      <time datetime="2021-01-26 20:21" pubdate>
+        2021年1月26日 晚上
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      55 字
+      710 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      8
        分钟
     </span>
   
@@ -224,19 +224,25 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">君子如水</h1>
+            <h1 style="display: none">2021.01.26笔记</h1>
             
             <div class="markdown-body">
-              <p>君子如水，随方就圆，无处不自在，择一人而白头，择一城而终老。 </p>
-<h2 id="嘎嘎"><a href="#嘎嘎" class="headerlink" title="嘎嘎"></a>嘎嘎</h2><h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+              <h2 id="RPC"><a href="#RPC" class="headerlink" title="RPC"></a>RPC</h2><p>RPC允许程序调用另一个地址空间的过程或函数，而不用程序员显示编码这个远程调用的细节。即无论是调用本地接口/服务的还是远程的接口/服务，本质上编写的调用代码基本相同。</p>
+<h4 id="1-RPC发展阶段："><a href="#1-RPC发展阶段：" class="headerlink" title="1. RPC发展阶段："></a>1. RPC发展阶段：</h4><p>Scoket<br>RMI API远程方法调用<br>Http + XML WebService<br>Http + JSON</p>
+<h4 id="2-PRC服务框架："><a href="#2-PRC服务框架：" class="headerlink" title="2. PRC服务框架："></a>2. PRC服务框架：</h4><p>国内：Dubbo、DubboX、Motan<br>国外：gPRC、Thrift等</p>
+<h4 id="3-RPC技术"><a href="#3-RPC技术" class="headerlink" title="3. RPC技术"></a>3. RPC技术</h4><p>通信：Netty<br>网络传输：Hession<br>服务注册与发现</p>
+<h2 id="Dubbo"><a href="#Dubbo" class="headerlink" title="Dubbo"></a>Dubbo</h2><p>Dubbo在国内拥有很高人气，是微服务架构的首选，后来随着SpringCloud的流程，社区一度停更，外部用户发布了DubboX等升级版本。最近，Dubbo社区又重新活跃，更新后的Dubbo也发布了3.0预览版等。并且宣布会在未来的版本中支持更多的特性。</p>
+<h4 id="1-Dubbo配置总线："><a href="#1-Dubbo配置总线：" class="headerlink" title="1. Dubbo配置总线："></a>1. Dubbo配置总线：</h4><p>protocol://username:password@host:port/path?key=value&amp;key=value<br>protocol：URL的协议，常见的是HTTP协议和HTTPS协议，当然还有其他协议，如FTP协议、SMTP协议。</p>
+<h4 id="2-Dubbo-SPI："><a href="#2-Dubbo-SPI：" class="headerlink" title="2. Dubbo SPI："></a>2. Dubbo SPI：</h4><p>OCP原则，即“对扩展开放，对修改封闭”，Dubbo采用了“微内核+插件”的架构。Dubbo采用SPI机制来加载插件。<br>JDK SPI（Service Provider Interface）主要是针对厂商、框架开发人员或者插件使用的一种技术。JDK SPI就是提供这样一个机制：为某个接口寻找服务实现的机制。</p>
+<h4 id="3-Dubbo的Node"><a href="#3-Dubbo的Node" class="headerlink" title="3. Dubbo的Node:"></a>3. Dubbo的Node:</h4><p>Node: Direcotry、Invoker、Monitor、Registry</p>
+<h2 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h2><h4 id="Netty在JDK自带的NIO-API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。"><a href="#Netty在JDK自带的NIO-API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。" class="headerlink" title="Netty在JDK自带的NIO API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。"></a>Netty在JDK自带的NIO API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。</h4><h4 id="Netty的核心组件："><a href="#Netty的核心组件：" class="headerlink" title="Netty的核心组件："></a>Netty的核心组件：</h4><p>Channel（对网络连接的抽象）、Selector（对多路复用器的抽象）、ChannelPipeline&amp;ChannelHandler、NioEventLoop、NioEventLoopGroup、ByteBuf</p>
+<h2 id="Dubbo-注册中心"><a href="#Dubbo-注册中心" class="headerlink" title="Dubbo 注册中心"></a>Dubbo 注册中心</h2><h4 id="Registry核心接口："><a href="#Registry核心接口：" class="headerlink" title="Registry核心接口："></a>Registry核心接口：</h4><p>Registry其实是应用本地的注册中心客户端，真正的“注册中心”服务是其他独立部署的进程，或进程组成的集群，比如ZooKeeper集群。</p>
+<h4 id="ZooKeeper注册中心的实现："><a href="#ZooKeeper注册中心的实现：" class="headerlink" title="ZooKeeper注册中心的实现："></a>ZooKeeper注册中心的实现：</h4><p>Dubbo支持ZooKeeper作为注册中心服务，这也是Dubbo推荐的。ZooKeeper是分布式应用所涉及的高可用且一致性的开源协调服务。</p>
+<h2 id="通信协议："><a href="#通信协议：" class="headerlink" title="通信协议："></a>通信协议：</h2><h4 id="rmi协议"><a href="#rmi协议" class="headerlink" title="rmi协议"></a>rmi协议</h4><p>　　走java二进制序列化，多个短连接，适合消费者和提供者数量差不多，适用于文件的传输，一般较少用。</p>
+<h4 id="hessian协议"><a href="#hessian协议" class="headerlink" title="hessian协议"></a>hessian协议</h4><p>　　走hessian序列化协议，多个短连接，适用于提供者数量比消费者数量还多，适用于文件的传输，一般较少用</p>
+<h4 id="http协议"><a href="#http协议" class="headerlink" title="http协议"></a>http协议</h4><p>　　走json序列化</p>
+<h4 id="webservice"><a href="#webservice" class="headerlink" title="webservice"></a>webservice</h4><p>　　走SOAP文本序列化</p>
+<h4 id="dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。"><a href="#dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。" class="headerlink" title="dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。"></a>dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。</h4>
             </div>
             <hr>
             <div>
