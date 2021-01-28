@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="君子剑">
   <meta name="keywords" content="">
-  <title>2021.01.26笔记 - Hexo</title>
+  <title>2021.01.28笔记 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -162,7 +162,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="2021.01.26笔记">
+            <span class="h2" id="subtitle" title="2021.01.28笔记">
               
             </span>
 
@@ -172,8 +172,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-01-26 20:21" pubdate>
-        2021年1月26日 晚上
+      <time datetime="2021-01-28 19:56" pubdate>
+        2021年1月28日 晚上
       </time>
     </span>
   
@@ -184,7 +184,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      710 字
+      1.1k 字
     </span>
   
 
@@ -194,7 +194,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      8
+      11
        分钟
     </span>
   
@@ -224,30 +224,55 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">2021.01.26笔记</h1>
+            <h1 style="display: none">2021.01.28笔记</h1>
             
             <div class="markdown-body">
-              <h2 id="RPC"><a href="#RPC" class="headerlink" title="RPC"></a>RPC</h2><p>RPC允许程序调用另一个地址空间的过程或函数，而不用程序员显示编码这个远程调用的细节。即无论是调用本地接口/服务的还是远程的接口/服务，本质上编写的调用代码基本相同。</p>
-<h4 id="1-RPC发展阶段："><a href="#1-RPC发展阶段：" class="headerlink" title="1. RPC发展阶段："></a>1. RPC发展阶段：</h4><p>Scoket<br>RMI API远程方法调用<br>Http + XML WebService<br>Http + JSON</p>
-<h4 id="2-PRC服务框架："><a href="#2-PRC服务框架：" class="headerlink" title="2. PRC服务框架："></a>2. PRC服务框架：</h4><p>国内：Dubbo、DubboX、Motan<br>国外：gPRC、Thrift等</p>
-<h4 id="3-RPC技术"><a href="#3-RPC技术" class="headerlink" title="3. RPC技术"></a>3. RPC技术</h4><p>通信：Netty<br>网络传输：Hession<br>服务注册与发现</p>
-<h2 id="Dubbo"><a href="#Dubbo" class="headerlink" title="Dubbo"></a>Dubbo</h2><p>Dubbo在国内拥有很高人气，是微服务架构的首选，后来随着SpringCloud的流程，社区一度停更，外部用户发布了DubboX等升级版本。最近，Dubbo社区又重新活跃，更新后的Dubbo也发布了3.0预览版等。并且宣布会在未来的版本中支持更多的特性。</p>
-<h4 id="1-Dubbo配置总线："><a href="#1-Dubbo配置总线：" class="headerlink" title="1. Dubbo配置总线："></a>1. Dubbo配置总线：</h4><p>protocol://username:password@host:port/path?key=value&amp;key=value<br>protocol：URL的协议，常见的是HTTP协议和HTTPS协议，当然还有其他协议，如FTP协议、SMTP协议。</p>
-<h4 id="2-Dubbo-SPI："><a href="#2-Dubbo-SPI：" class="headerlink" title="2. Dubbo SPI："></a>2. Dubbo SPI：</h4><p>OCP原则，即“对扩展开放，对修改封闭”，Dubbo采用了“微内核+插件”的架构。Dubbo采用SPI机制来加载插件。<br>JDK SPI（Service Provider Interface）主要是针对厂商、框架开发人员或者插件使用的一种技术。JDK SPI就是提供这样一个机制：为某个接口寻找服务实现的机制。</p>
-<h4 id="3-Dubbo的Node"><a href="#3-Dubbo的Node" class="headerlink" title="3. Dubbo的Node:"></a>3. Dubbo的Node:</h4><p>Node: Direcotry、Invoker、Monitor、Registry</p>
-<h2 id="Netty"><a href="#Netty" class="headerlink" title="Netty"></a>Netty</h2><h4 id="Netty在JDK自带的NIO-API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。"><a href="#Netty在JDK自带的NIO-API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。" class="headerlink" title="Netty在JDK自带的NIO API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。"></a>Netty在JDK自带的NIO API基础上进行了封装，解决了JDK自身的一些问题。Netty采用Reactor线程模型，分为单Reactor单线程、单Reactor多线程和主从Reactor多线程。</h4><h4 id="Netty的核心组件："><a href="#Netty的核心组件：" class="headerlink" title="Netty的核心组件："></a>Netty的核心组件：</h4><p>Channel（对网络连接的抽象）、Selector（对多路复用器的抽象）、ChannelPipeline&amp;ChannelHandler、NioEventLoop、NioEventLoopGroup、ByteBuf</p>
-<h2 id="Dubbo-注册中心"><a href="#Dubbo-注册中心" class="headerlink" title="Dubbo 注册中心"></a>Dubbo 注册中心</h2><h4 id="Registry核心接口："><a href="#Registry核心接口：" class="headerlink" title="Registry核心接口："></a>Registry核心接口：</h4><p>Registry其实是应用本地的注册中心客户端，真正的“注册中心”服务是其他独立部署的进程，或进程组成的集群，比如ZooKeeper集群。</p>
-<h4 id="ZooKeeper注册中心的实现："><a href="#ZooKeeper注册中心的实现：" class="headerlink" title="ZooKeeper注册中心的实现："></a>ZooKeeper注册中心的实现：</h4><p>Dubbo支持ZooKeeper作为注册中心服务，这也是Dubbo推荐的。ZooKeeper是分布式应用所涉及的高可用且一致性的开源协调服务。</p>
-<h2 id="通信协议："><a href="#通信协议：" class="headerlink" title="通信协议："></a>通信协议：</h2><h4 id="rmi协议"><a href="#rmi协议" class="headerlink" title="rmi协议"></a>rmi协议</h4><p>　　走java二进制序列化，多个短连接，适合消费者和提供者数量差不多，适用于文件的传输，一般较少用。</p>
-<h4 id="hessian协议"><a href="#hessian协议" class="headerlink" title="hessian协议"></a>hessian协议</h4><p>　　走hessian序列化协议，多个短连接，适用于提供者数量比消费者数量还多，适用于文件的传输，一般较少用</p>
-<h4 id="http协议"><a href="#http协议" class="headerlink" title="http协议"></a>http协议</h4><p>　　走json序列化</p>
-<h4 id="webservice"><a href="#webservice" class="headerlink" title="webservice"></a>webservice</h4><p>　　走SOAP文本序列化</p>
-<h4 id="dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。"><a href="#dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。" class="headerlink" title="dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。"></a>dubbo实际基于不同的通信协议，支持hessian、java二进制序列化、json、SOAP文本序列化多种序列化协议。但是hessian是其默认的序列化协议。</h4>
+              <h1 id="分布式技术：缓存"><a href="#分布式技术：缓存" class="headerlink" title="分布式技术：缓存"></a>分布式技术：缓存</h1><h3 id="缓存的定义："><a href="#缓存的定义：" class="headerlink" title="缓存的定义："></a>缓存的定义：</h3><ul>
+<li>狭义缓存：缓存最初的含义，是指用于加速CPU数据交互的RAM，即随机存取存储器。</li>
+<li>广义缓存：任何可以用于数据告诉交互的存储介质，可以是硬件也可以是软件。</li>
+</ul>
+<h3 id="缓存的基本思想："><a href="#缓存的基本思想：" class="headerlink" title="缓存的基本思想："></a>缓存的基本思想：</h3><p>时间局限性原理；以空间换时间；性能成本Tradoff<br>利用时间局限性原理，通过空间换时间来达到加速数据获取的目的</p>
+<h3 id="缓存的优势："><a href="#缓存的优势：" class="headerlink" title="缓存的优势："></a>缓存的优势：</h3><p>提升访问性能；降低网络拥堵；减轻服务负载；增强可扩展性。<br><em>应用：Session信息&gt;&gt;登录服务</em></p>
+<h3 id="缓存的代价："><a href="#缓存的代价：" class="headerlink" title="缓存的代价："></a>缓存的代价：</h3><p>增加系统复杂度；相比DB存储，系统部署及运行费用更高；多份数据存在一致性问题</p>
+<h3 id="缓存读写模式："><a href="#缓存读写模式：" class="headerlink" title="缓存读写模式："></a>缓存读写模式：</h3><p>Cache Aside(旁路缓存，适合场景：更强一致性Cache数据构建复杂)、Read/Write Through(读写穿透，适用场景：数据有冷热区分)、Write Behine(异步缓存写入，适合场景：写频率超高，需要合并)。</p>
+<h3 id="缓存分布设计："><a href="#缓存分布设计：" class="headerlink" title="缓存分布设计："></a>缓存分布设计：</h3><p>首先选择分布式算法，是采用取模还是一致性Hash进行分布。<br>其次，分布读写访问如何进行实施，是由缓存Client直接进行Hash分布定位读写，还是通过Proxy进行路由读写。<br>最后，如果待缓存的数据量增长过快，需要将数据从缓存节点进行动态拆分。</p>
+<h3 id="7大缓存经典问题："><a href="#7大缓存经典问题：" class="headerlink" title="7大缓存经典问题："></a>7大缓存经典问题：</h3><ol>
+<li><p><strong>缓存失效：</strong> 业务访问时，如果大量的 key 同时过期，很多缓存数据访问都会 miss，进而穿透到 DB，DB 的压力就会明显上升，由于 DB 的性能较差，只在缓存的 1%~2% 以下，这样请求的慢查率会明显上升。</p>
+</li>
+<li><p><strong>缓存穿透：</strong> 因为对于正常访问，访问的数据即便不在缓存，也可以通过 DB 加载回种到缓存。而缓存穿透，则意味着有特殊访客在查询一个不存在的 key，导致每次查询都会穿透到 DB，如果这个特殊访客再控制一批肉鸡机器，持续访问你系统里不存在的 key，就会对 DB 产生很大的压力，从而影响正常服务。</p>
+</li>
+<li><p><strong>缓存雪崩：</strong>系统运行过程中，缓存雪崩是一个非常严重的问题。缓存雪崩是指部分缓存节点不可用，导致整个缓存体系甚至甚至服务系统不可用的情况。缓存雪崩按照缓存是否 rehash（即是否漂移）分两种情况：缓存不支持 rehash 导致的系统雪崩不可用；缓存支持 rehash 导致的缓存雪崩不可用。</p>
+</li>
+<li><p><strong>数据不一致：</strong>同一份数据，可能会同时存在 DB 和缓存之中。那就有可能发生，DB 和缓存的数据不一致。如果缓存有多个副本，多个缓存副本里的数据也可能会发生不一致现象。</p>
+</li>
+<li><p><strong>数据并发竞争：</strong>数据并发竞争，主要是由于多个进程/线程中，有大量并发请求获取相同的数据，而这个数据key因为正好过期、被剔除等各种原因在缓存中不存在，这些进程/线程之间没有任何协调，然后一起并发查询DB，请求那个相同的key，最终导致DB压力增大。</p>
+</li>
+<li><p><strong>Hot key：</strong>数据冷热，在突发事件发生时，大量用户同时去访问这个突发热点信息，访问这个Hot key，这个突发热点信息所在的缓存节点就很容易出现过载和卡顿。</p>
+</li>
+<li><p><strong>Big key：</strong>缓存访问时，部分Key的Value过大，读写、加载易超时。</p>
+<h3 id="Memcached及Redis"><a href="#Memcached及Redis" class="headerlink" title="Memcached及Redis:"></a>Memcached及Redis:</h3><p>Memcached和Redis同为key-value存储组件，Memcached只能支持二进制字节块这一种数据类型。而Redis的数据类型却非常的丰富，它具有8中核心数据类型，单线程压测可以达到10~11w的QPS。虽然Redis所有数据的读写操作，都在内存中进行，但也可以将所有的数据进行落盘做持久化。</p>
+<h3 id="Redis比Memcached流行的三种原因："><a href="#Redis比Memcached流行的三种原因：" class="headerlink" title="Redis比Memcached流行的三种原因："></a>Redis比Memcached流行的三种原因：</h3><p>数据结构、持久化以及集群（尤为重要）</p>
+<h3 id="如何更新缓存："><a href="#如何更新缓存：" class="headerlink" title="如何更新缓存："></a>如何更新缓存：</h3><ul>
+<li>组合一：先更新缓存，再更新数据库</li>
+<li>组合二：先删除缓存，再更新数据库</li>
+<li>组合三：先更新数据库，再更新缓存</li>
+<li>组合四：先更新数据库，再删除缓存（<strong>推荐</strong>）</li>
+</ul>
+</li>
+</ol>
+
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+                    
+                  </div>
                 
               </div>
               
@@ -258,18 +283,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/01/28/202101128/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">2021.01.28笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/01/22/hello-world/">
-                        <span class="hidden-mobile">君子有剑</span>
+                      <a href="/2021/01/26/gaga-md/">
+                        <span class="hidden-mobile">2021.01.26笔记</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
